@@ -10,13 +10,17 @@ Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of B
 ![Paired relations](EDA/PairPlots.png)
 ### Reviewing paired relations among nine numerical features
 **Latitude:** From South 42.25 to North 42.40, the number of listings are increasing.
+
 **Longitude:** From West -71.15 to East -71.00, the number of listings for Boston Airbnb increases.
+
 **The Number_of_Reviews and Reviews_Per_Month** are positively correlated.
 
 ![Spearman Correlation Among 9 Features](EDA/Spearman_Correlation_9_Features.png)
 ### Reviewing Spearman correlation heatmap to find any correlation among nine numerical features
 **Latitude** is positively correlated with price(r=0.31) and longitude(r=0.30).
+
 **The number of reviews and review per month** are positively correlated(r=0.44).
+
 **Availability 365 and calculated host listings count** are positively correlated(r=0.25).
 
 ### Location - What regions do you have more choices or will you more likely to stay in Boston Airbnb?
