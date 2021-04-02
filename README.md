@@ -7,7 +7,7 @@ For this demo, I have used the open data source compiled by Inside Airbnb on 10 
 Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of Boston.
 
 ## EDA
-![Paired relations](EDA/pairplots.png)
+![Paired relations](EDA/PairPlots.png)
 ### Reviewing paired relations among nine numerical features
 **Latitude:** From South 42.25 to North 42.40, the number of listings are increasing.
 **Longitude:** From West -71.15 to East -71.00, the number of listings for Boston Airbnb increases.
