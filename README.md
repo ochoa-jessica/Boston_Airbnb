@@ -59,7 +59,36 @@ Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of B
 ### Price - What are the important features to influence price? Could you predict the price of Boston Airbnb?
 <p> The average price by private room is about $81.22, while the average price by the entire home/apt is much higher at about $189.38.</p>
 
+<p>Meanwhile I found the average price by private room is about $81.22, while the average price by the entire home or apartment is much higher at about $189.38.</p>
+
+![Actual Price Vs Predicted Price](EDA/Actual_Price_VS_Predicted_Price.png)
+<p>The actual avg price for Boston Airbnb from the test dataset is about $147.85. The predicted avg price for Boston Airbnb from the test dataset is about $149.53.</p>
+
+![Model Performances](EDA/Model_Performances.png)
+<p>R-squared at 0.549 indicates that the Random Forest model best explains the variability of the response data. The mean absolute error at 40,423 indicates that the Random Forest model has a lower absolute difference between prediction and actual observation, which means it has lower prediction errors.</p>
+
+![Coefficients of Regression Model](EDA/Coefficients.png)
+<p>From the above coefficients of regression model, we can see as the variable latitude, room type entire home/apt, and longitude increases, the response variable price will increase and reversly, the increase of room type private rooms will lead to decrease in the price. The results of the coefficients definitely give the picture that location and room type are important influencers for the prices.</p>
+
+![Ranking Plot from Random Forest Model](EDA/Ranking_Plot.png)
+<p>The feature importance ranking plot from the Random Forest model shoes that room type entire home/apt, latitude and longitude are still the most important features to predict the price, and interestingly, calculated host listings count and host id are also other two important influencers in Random Forests.</p>
+
+![Shapley Value Plot](EDA/SHAP_Value_1.png)
+<p>The Shapley value plot can further show the positive and negative relationships of the predictors with the response variable price - </p>
+    <ul>
+        <li>Feature Importance - Variables are ranked in descending order.<li>
+        <li>Impact - The horizontal location shows whether the effect of that value is associated with higher or lower prediction.</li>
+        <li>Original Value - Color shows whether that variable is high(in red) or low(in blue) for that observation.</li>
+        <li>Correlation - A high level of the room type "Entire home/apt" content has a high and positive impact on the price. The "high" comes from the red color, and the "positive" impact is shown on the X-axis. Similarly, "minimum nights" is negatively correlated with target variable price.<li>
+        <ul>
+
+![Shapley Value Simpler Plot](EDA/SHAP_Value_2.png)
+<p>Simpler version of Shapley Value indicating the average impact of each variable on the model's output price in descending order and ignoring positive/negative prediction for the price.</p>
 
 
-
-
+## Valuable Insights
+<ul>
+    <li>Location: What regions do you have more choices or you more likely to stay in Boston Airbnb? - Top five neighborhoods for you to make decisions are Dorchester, Downtown, Jamaica Plain, Roxbury, and Back Bay.</li>
+    <li>Room Type: What types of rooms are most popular for stay? - Generally speaking, you would have higher chance to find your Airbnb within the room type Entire home/apt and Private room. While comparing between the two, Entire home/apt has higher number of listings and average number of reviews per month, on the other hand, Private room has higher number in terms of average minimum nights, the average number of reviews, and average days of availability in 365 days.<li>
+    <li>Price: What are the important features to influence price? Could you predict the price of Boston Airbnb? - Lasso Regression and Random Forest both agree that Location(Longitude & Latitude) and Room Type(Entire home/apt & Private room) are important to predict prices of Boston Airbnb. However, if you care about the price, you might choose a Private room for your next trip. Otherwise, from Southwest to Northeast, the price of Boston Airbnb tends to increase.</li>
+    <ul>
