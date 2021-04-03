@@ -76,11 +76,11 @@ Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of B
 ![Shapley Value Plot](EDA/SHAP_Value_1.png)
 <p>The Shapley value plot can further show the positive and negative relationships of the predictors with the response variable price - </p>
     <ul>
-        <li>Feature Importance - Variables are ranked in descending order.<li>
+        <li>Feature Importance - Variables are ranked in descending order.</li>
         <li>Impact - The horizontal location shows whether the effect of that value is associated with higher or lower prediction.</li>
         <li>Original Value - Color shows whether that variable is high(in red) or low(in blue) for that observation.</li>
-        <li>Correlation - A high level of the room type "Entire home/apt" content has a high and positive impact on the price. The "high" comes from the red color, and the "positive" impact is shown on the X-axis. Similarly, "minimum nights" is negatively correlated with target variable price.<li>
-        <ul>
+        <li>Correlation - A high level of the room type "Entire home/apt" content has a high and positive impact on the price. The "high" comes from the red color, and the "positive" impact is shown on the X-axis. Similarly, "minimum nights" is negatively correlated with target variable price.</li>
+     </ul>
 
 ![Shapley Value Simpler Plot](EDA/SHAP_Value_2.png)
 <p>Simpler version of Shapley Value indicating the average impact of each variable on the model's output price in descending order and ignoring positive/negative prediction for the price.</p>
@@ -89,6 +89,6 @@ Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of B
 ## Valuable Insights
 <ul>
     <li>Location: What regions do you have more choices or you more likely to stay in Boston Airbnb? - Top five neighborhoods for you to make decisions are Dorchester, Downtown, Jamaica Plain, Roxbury, and Back Bay.</li>
-    <li>Room Type: What types of rooms are most popular for stay? - Generally speaking, you would have higher chance to find your Airbnb within the room type Entire home/apt and Private room. While comparing between the two, Entire home/apt has higher number of listings and average number of reviews per month, on the other hand, Private room has higher number in terms of average minimum nights, the average number of reviews, and average days of availability in 365 days.<li>
+    <li>Room Type: What types of rooms are most popular for stay? - Generally speaking, you would have higher chance to find your Airbnb within the room type Entire home/apt and Private room. While comparing between the two, Entire home/apt has higher number of listings and average number of reviews per month, on the other hand, Private room has higher number in terms of average minimum nights, the average number of reviews, and average days of availability in 365 days.</li>
     <li>Price: What are the important features to influence price? Could you predict the price of Boston Airbnb? - Lasso Regression and Random Forest both agree that Location(Longitude & Latitude) and Room Type(Entire home/apt & Private room) are important to predict prices of Boston Airbnb. However, if you care about the price, you might choose a Private room for your next trip. Otherwise, from Southwest to Northeast, the price of Boston Airbnb tends to increase.</li>
-    <ul>
+</ul>
