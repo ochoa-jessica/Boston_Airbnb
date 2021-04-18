@@ -85,10 +85,7 @@ Consists of 3440 listings and 16 features of Airbnb across 25 neighborhoods of B
 ![Shapley Value Simpler Plot](EDA/SHAP_Value_2.png)
 <p>Simpler version of Shapley Value indicating the average impact of each variable on the model's output price in descending order and ignoring positive/negative prediction for the price.</p>
 
-
 ## Valuable Insights
-<ul>
-    <li>Location: What regions do you have more choices or you more likely to stay in Boston Airbnb? - Top five neighborhoods for you to make decisions are Dorchester, Downtown, Jamaica Plain, Roxbury, and Back Bay.</li>
-    <li>Room Type: What types of rooms are most popular for stay? - Generally speaking, you would have higher chance to find your Airbnb within the room type Entire home/apt and Private room. While comparing between the two, Entire home/apt has higher number of listings and average number of reviews per month, on the other hand, Private room has higher number in terms of average minimum nights, the average number of reviews, and average days of availability in 365 days.</li>
-    <li>Price: What are the important features to influence price? Could you predict the price of Boston Airbnb? - Lasso Regression and Random Forest both agree that Location(Longitude & Latitude) and Room Type(Entire home/apt & Private room) are important to predict prices of Boston Airbnb. However, if you care about the price, you might choose a Private room for your next trip. Otherwise, from Southwest to Northeast, the price of Boston Airbnb tends to increase.</li>
-</ul>
+> Location: What regions do you have more choices or you more likely to stay in Boston Airbnb? - Top five neighborhoods for you to make decisions are Dorchester, Downtown, Jamaica Plain, Roxbury, and Back Bay.
+> Room Type: What types of rooms are most popular for stay? - Generally speaking, you would have higher chance to find your Airbnb within the room type Entire home/apt and Private room. While comparing between the two, Entire home/apt has higher number of listings and average number of reviews per month, on the other hand, Private room has higher number in terms of average minimum nights, the average number of reviews, and average days of availability in 365 days.
+> Price: What are the important features to influence price? Could you predict the price of Boston Airbnb? - Lasso Regression and Random Forest both agree that Location(Longitude & Latitude) and Room Type(Entire home/apt & Private room) are important to predict prices of Boston Airbnb. However, if you care about the price, you might choose a Private room for your next trip. Otherwise, from Southwest to Northeast, the price of Boston Airbnb tends to increase.
