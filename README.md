@@ -1,4 +1,4 @@
-# Boston_Airbnb_EDA
+# Boston_Airbnb
 
 ## Project Motivation
 For this demo, I have used the open data source compiled by Inside Airbnb on 10 June 2020 to analyze Boston Airbnb Dataset by performing EDA based on three criteria's - a) Location - What regions do you have more choice or are more likely to stay in Boston Airbnb?; b) Room Type - What types of rooms are most popular for stay?; c) Price - What are the important features to influence the price? Could you predict the price of Boston Airbnb?
